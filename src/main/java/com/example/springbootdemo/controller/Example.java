@@ -1,6 +1,7 @@
 package com.example.springbootdemo.controller;
 
-import com.example.springbootdemo.bean.MyBean;
+import com.example.springbootdemo.configuration.bean.Config;
+import com.example.springbootdemo.configuration.bean.MyBean;
 import com.example.springbootdemo.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -15,6 +16,9 @@ public class Example {
     private AccountService accountService;
 
     @Autowired
+    private Config config;
+
+    @Autowired
     private MyBean myBean;
 
     @RequestMapping("/")
@@ -24,6 +28,7 @@ public class Example {
         System.out.println("---------- MyBean.getName()=" + myBean.getSecret() + "----------");
         System.out.println("---------- MyBean.getName()=" + myBean.getNumber() + "----------");
         System.out.println("---------- MyBean.getName()=" + myBean.getLongValue() + "----------");
+        System.out.println("ConfigurationProperties test:" + config.getServers().toString());
         return "Hello World!111111113334444555554";
     }
 
