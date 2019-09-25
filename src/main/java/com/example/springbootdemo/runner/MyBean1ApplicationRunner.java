@@ -6,6 +6,8 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
+ * If you need to run some specific code once the SpringApplication has started,
+ * you can implement the ApplicationRunner or CommandLineRunner interfaces.
  * @author : bruceliu(jxta.liu@gmail.com)
  * @version V1.0
  * @Project: spring-boot-demo
