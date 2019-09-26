@@ -76,7 +76,7 @@ public class MyBean {
      */
     @ConfigurationProperties(prefix = "another")
     @Bean
-    public AnotherComponent anotherComponent(){
-        return null;
+    public AnotherComponent anotherComponent1(){
+        return new AnotherComponent();
     }
 }

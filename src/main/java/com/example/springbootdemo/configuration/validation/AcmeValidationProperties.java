@@ -22,12 +22,34 @@ public class AcmeValidationProperties {
     @NotNull
     private InetAddress remoteAddress;
 
+    public InetAddress getRemoteAddress() {
+        return remoteAddress;
+    }
+
+    public void setRemoteAddress(InetAddress remoteAddress) {
+        this.remoteAddress = remoteAddress;
+    }
+
+
+
+    public Security getSecurity() {
+        return security;
+    }
+
     @Valid
     private final Security security = new Security();
 
     // ... getters and setters
 
     public static class Security {
+
+        public String getUsername() {
+            return username;
+        }
+
+        public void setUsername(String username) {
+            this.username = username;
+        }
 
         @NotEmpty
         public String username;
