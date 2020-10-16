@@ -19,18 +19,18 @@ import java.util.List;
 @RequestMapping(value = "/users")
 public class MyRestController {
     @RequestMapping(value="/{user}", method=RequestMethod.GET)
-    public User getUser(@PathVariable Long user){
+    public User getUser(@PathVariable String user){
         //
-        return null;
+        return new User();
     }
 
     @RequestMapping(value = "/{user}/customers", method = RequestMethod.GET)
-    List<Customer> getUserCustomers(@PathVariable Long user){
+    List<Customer> getUserCustomers(@PathVariable String user){
         return null;
     }
 
     @RequestMapping(value = "/{user}", method = RequestMethod.DELETE)
-    public User deleteUser(@PathVariable Long user){
+    public User deleteUser(@PathVariable String user){
         return null;
     }
 }

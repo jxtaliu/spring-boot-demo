@@ -29,7 +29,7 @@ public class Example {
         System.out.println("---------- MyBean.getName()=" + myBean.getNumber() + "----------");
         System.out.println("---------- MyBean.getName()=" + myBean.getLongValue() + "----------");
         System.out.println("ConfigurationProperties test:" + config.getServers().toString());
-        return "Hello World!111111113334444555554";
+        return "Hello World!yes";
     }
 
     @RequestMapping("/hello")
