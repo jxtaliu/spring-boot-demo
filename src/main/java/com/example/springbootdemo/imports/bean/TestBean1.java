@@ -9,4 +9,5 @@ package com.example.springbootdemo.imports.bean;
  * @date Date : 2019年08月17日 19:22
  */
 public class TestBean1 {
+
 }
